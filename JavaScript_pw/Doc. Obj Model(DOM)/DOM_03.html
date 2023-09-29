@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM part 3</title>
+</head>
+<body>
+    <!-- Event listener -->
+    <h1>Hello Students </h1>
+    <p id="js"></p>
+     <button onclick="hey()" id="jss">Submit</button>
+    <script>
+        document.addEventListener("click" , hello)  // Click is event and hello is function name
+        function hello() {
+             document.getElementById("js").innerText = "Bonjour Abhishek Behera";
+        }
+        function hey() {
+          document.getElementById("jss").innerText = "Namaste "
+          document.getElementById("jss").style.backgroundColor = "Black"
+          document.getElementById("jss").style.color = "red"
+          document.getElementById("jss").style.padding = "16px"
+          document.getElementById("jss").style.border = "5px solid yellow"
+          document.getElementById("jss").style.borderRadius = "100px"
+        }
+
+    </script>
+</body>
+</html>
